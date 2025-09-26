@@ -23,6 +23,6 @@ class Post(base):
 
 
 # The drawback of using ORM Models is that if we make any changes to the model, it won't reflect in the database automatically.
-# To make changes in the database schema, we have to use migration tools like Alembic which will be covered in the next commit.
+# To make changes in the database schema, we have to use migration tools like Alembic.
 
   

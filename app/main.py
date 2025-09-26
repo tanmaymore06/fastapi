@@ -7,6 +7,8 @@ from typing import Optional
 from .database import engine
 from . import models
 
+# Start reading from the database.py then go to models.py and finally come back here.
+
 models.base.metadata.create_all(bind=engine)
 # "models.base.metadata" goes to the the models.py specifically, the ORM Model 'Post(Base)' and gets all the metadata like, table structure, column specifications, etc.,.
 # The create_all() creates whatever info present in the ORM Model and targets to the connection to the database created in the engine 
